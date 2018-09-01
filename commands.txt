@@ -1,0 +1,44 @@
+
+npm -v
+npm init
+npm install express
+
+// запуск сервера
+node index.js
+
+npm run start
+
+// локальная версия - позволяет перегружать сервер налету при изменении порта 5000 -> 6000
+npm i nodemon --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
