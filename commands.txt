@@ -12,6 +12,11 @@ npm run start
 npm i nodemon --save-dev
 
 
+добавляем в .gitignore
+/node_modules
+.idea
+commands.txt
+
 
 
 
