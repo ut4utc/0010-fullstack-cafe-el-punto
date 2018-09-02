@@ -3,11 +3,11 @@ const controller = require('../controllers/analitycs')
 const router = express.Router()
 
 
-// localhost:5000/api/auth/login
-router.post('/login', controller.login)
+// localhost:5000/api/analitycs/overwiev
+router.get('/overview', controller.overview)
 
-// localhost:5000/api/auth/register
-router.post('/register', controller.register)
+// localhost:5000/api/analitycs/analitycs
+router.get('/analitycs', controller.analitycs)
 
 
 module.exports = router
