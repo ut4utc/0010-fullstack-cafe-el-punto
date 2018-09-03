@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const Shema = mongoose.Schema
+const Schema = mongoose.Schema
 
-const orderShema = new Shema({
+const orderSchema = new Schema({
     date: {
         type: Date,
         default: Date.now
@@ -15,7 +15,7 @@ const orderShema = new Shema({
             name: {
                 type: String
             },
-            quontity: {
+            quantity: {
                 type: Number
             },
             cost: {
@@ -25,9 +25,9 @@ const orderShema = new Shema({
     ],
     user: {
         ref: 'users',
-        type: Shema.Types.ObjectId
+        type: Schema.Types.ObjectId
     }
 })
 
 // название колекции orders
-module.exports = mongoose.model('orders', positionShema)
+module.exports = mongoose.model('orders', orderSchema)

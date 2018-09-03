@@ -1,4 +1,5 @@
 // controller отвечающий за авторизацию
+const User = require('../models/User')
 
 module.exports.login = function (req, res) {
     res.status(200).json({
@@ -10,7 +11,6 @@ module.exports.login = function (req, res) {
 }
 
 module.exports.register = function (req, res) {
-    res.status(200).json({
-        register: 'register from controller'
-    })
+    // email password
+
 }

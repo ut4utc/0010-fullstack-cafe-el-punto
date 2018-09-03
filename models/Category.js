@@ -1,4 +1,3 @@
-
 // подключаем mongoose
 const mongoose = required('mongoose')
 
@@ -16,7 +15,7 @@ const categorySchema = new Schema({
     },
     user: {
         ref: 'users',
-        type: Shema.Types.ObjectId
+        type: Schema.Types.ObjectId
     }
 
 })

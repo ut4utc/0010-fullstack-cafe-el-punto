@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const Shema = mongoose.Schema
+const Schema = mongoose.Schema
 
-const positionShema = new Shema({
+const positionSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -12,12 +12,12 @@ const positionShema = new Shema({
     },
     category: {
         ref: 'categories',
-        type: Shema.Types.ObjectId
+        type: Schema.Types.ObjectId
     },
     user: {
         ref: 'users',
-        type: Shema.Types.ObjectId
+        type: Schema.Types.ObjectId
     }
 })
 
-module.exports = mongoose.model('positions', positionShema)
+module.exports = mongoose.model('positions', positionSchema)
