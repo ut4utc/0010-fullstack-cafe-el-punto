@@ -10,11 +10,12 @@ const orderRoutes = require('./routes/order')
 const positionRoutes = require('./routes/position')
 const app = express()
 
-
 // устанавливаем соединение с БД монгоДБ
-mongoose.connect('')
-    .then(() => console.log('MongoDB connected.'))
-    .catch(error => console.log(error))
+const keys = require('./config/keys').mongoURI
+//connect to mongo DB
+mongoose.connect(keys, { useNewUrlParser: true })
+    .then(() => console.log("mongoDB connected"))
+    .catch(err => console.log(err));
 
 // используем доп-плагины для получения json объекта
 // urulencoded - защищает нас от атак на спецсимволы
