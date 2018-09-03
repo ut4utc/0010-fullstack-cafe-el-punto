@@ -24,6 +24,20 @@ npm i body-parser
 
 npm install cors morgan
 
+npm i mongoose
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

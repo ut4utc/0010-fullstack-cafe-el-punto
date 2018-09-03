@@ -1,10 +1,8 @@
 const express = require('express')
+const mongoose = require('mongoose')
+
 // подключаем пакет боди-парсер для парсинга json
 const bodyParcer = require('body-parser')
-
-
-
-
 const authRoutes = require('./routes/auth')
 const analitycsRoutes = require('./routes/analitycs')
 const categoryRoutes = require('./routes/category')
@@ -12,6 +10,11 @@ const orderRoutes = require('./routes/order')
 const positionRoutes = require('./routes/position')
 const app = express()
 
+
+// устанавливаем соединение с БД монгоДБ
+mongoose.connect('')
+    .then(() => console.log('MongoDB connected.'))
+    .catch(error => console.log(error))
 
 // используем доп-плагины для получения json объекта
 // urulencoded - защищает нас от атак на спецсимволы
