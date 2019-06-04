@@ -38,5 +38,5 @@ app.use('/api/position', positionRoutes)
 
 
 
-
+// экспортируем наружу переменную app
 module.exports = app

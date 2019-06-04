@@ -3,6 +3,9 @@ npm -v
 npm init
 npm install express
 
+в package.json nodemon - нужен для автоматического перезапуска сервера при изменениях кода.
+
+
 // запуск сервера
 node index.js
 
